@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ toggleMenu }) => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* logo (hidden on mobile) */}
         <div className="flex-1 hidden lg:flex">
-          <img src="/logo.png" alt="Fence Hero Logo" className="h-24 w-24" />
+          <img src="/logo.png" alt="Fence Hero Logo" className="h-48 w-50" />
         </div>
 
         {/* desktop links */}

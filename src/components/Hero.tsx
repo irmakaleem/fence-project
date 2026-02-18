@@ -18,15 +18,24 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section
-      className="relative min-h-screen overflow-hidden text-white font-[Inter] bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/assets/hero1.png')" }}
-    >
+    <section className="relative min-h-[140vh] overflow-hidden text-white font-[Inter] bg-cover bg-center bg-no-repeat">
+      {/* Stars background */}
+      <div className="absolute inset-0 bg-[url('/assets/hero1.png')] bg-cover bg-no-repeat bg-center"></div>
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
 
+      {/* Tree image */}
+      <div
+        className="absolute bottom-0 left-0 w-full h-[70%] bg-no-repeat bg-cover"
+        style={{
+          backgroundImage: "url('/assets/hero2.png')",
+          backgroundPosition: "center 50%",
+        }}
+      ></div>
+
       {/* hero content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
+      <div className="relative z-10 flex items-center justify-center min-h-screen px-6 pt-30">
         <div className="max-w-4xl text-center pt-20">
           <span className="inline-block bg-yellow-600 text-white text-xs font-semibold px-5 py-2 rounded-full mb-8 tracking-wide">
             Precision Craftsmanship &amp; Durability
@@ -93,6 +102,7 @@ const Hero: React.FC = () => {
           </a>
         </div>
       </div>
+      <div></div>
     </section>
   );
 };
