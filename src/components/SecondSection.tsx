@@ -25,34 +25,54 @@ const cardData: CardData[] = [
 
 const SecondSection: React.FC = () => {
   return (
-    <section className="bg-white py-16 px-6 lg:px-12">
+    <section
+      className="bg-[#F8F1D9] py-16 px-6 lg:px-12 min-h-[140vh] bg-cover bg-no-repeat bg-center"
+      style={{
+        backgroundImage: "url('/assets/texturebg.png')",
+        backgroundPosition: "center 27%",
+      }}
+    >
       <div className="max-w-7xl mx-auto">
         {/* Cards Container */}
-        <div className="flex flex-col lg:flex-row gap-9 justify-center items-stretch">
-          {cardData.map((card, index) => (
-            <div
-              key={index}
-              className="w-full lg:w-[412px] h-[609px] rounded-[50px] p-[33px] shadow-lg flex flex-col justify-end hover:shadow-xl transition-shadow duration-300"
-              style={{
-                backgroundColor: "rgb(255, 69, 69)",
-                boxShadow: "6px 12px 11.6px 0px rgba(0, 0, 0, 0.23)",
-              }}
-            >
-              {/* Title */}
-              <div className="mb-6">
-                <h3 className="text-white text-[35px] font-semibold leading-tight">
-                  {card.title}
-                </h3>
-              </div>
+        <div className="flex flex-col lg:flex-row gap-9 justify-center items-stretch absolute top-[136vh] left-1/2 transform -translate-x-1/2 w-full px-6 lg:px-12">
+          {(() => {
+            const images = [
+              "/assets/card1.png",
+              "/assets/card2.png",
+              "/assets/card3.png",
+            ];
 
-              {/* Description */}
-              <div>
-                <p className="text-white text-[30px] leading-tight font-normal">
-                  {card.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            return cardData.map((card, index) => {
+              const img = images[index] ?? images[0];
+              return (
+                <div
+                  key={index}
+                  className="w-full lg:w-[390px] h-[575px] rounded-[50px] p-[40px] shadow-lg flex flex-col justify-end hover:shadow-xl transition-shadow duration-300"
+                  style={{
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.36)), url(${img})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    boxShadow: "6px 12px 11.6px 0px rgba(0, 0, 0, 0.23)",
+                  }}
+                >
+                  {/* Title */}
+                  <div className="mb-6">
+                    <h3 className="text-white text-[25px] font-semibold leading-tight">
+                      {card.title}
+                    </h3>
+                  </div>
+
+                  {/* Description */}
+                  <div>
+                    <p className="text-white text-[20px] leading-tight font-normal">
+                      {card.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            });
+          })()}
         </div>
       </div>
     </section>
