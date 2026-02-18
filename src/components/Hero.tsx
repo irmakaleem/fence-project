@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
       ></div>
 
       {/* hero content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-6 pt-30">
+      <div className="relative z-10 flex items-center justify-center min-h-screen px-6 pt-40">
         <div className="max-w-4xl text-center pt-20">
           <span className="inline-block bg-yellow-600 text-white text-xs font-semibold px-5 py-2 rounded-full mb-8 tracking-wide">
             Precision Craftsmanship &amp; Durability

@@ -16,14 +16,14 @@ const Header: React.FC<HeaderProps> = ({ toggleMenu }) => {
         </a>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-8">
         {/* logo (hidden on mobile) */}
         <div className="flex-1 hidden lg:flex">
           <img src="/logo.png" alt="Fence Hero Logo" className="h-48 w-50" />
         </div>
 
         {/* desktop links */}
-        <ul className="hidden lg:flex items-center gap-6 text-sm font-medium">
+        <ul className="hidden lg:flex items-center gap-6 text-sm font-medium bg-black px-6 py-2 rounded-full">
           <li>
             <a
               href="#"
