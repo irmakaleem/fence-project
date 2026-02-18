@@ -1,7 +1,8 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 
 const Hero: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [bgIndex, setBgIndex] = useState(0);
 
   const toggleMenu = useCallback(() => {
     setMenuOpen((prev) => !prev);
@@ -9,6 +10,11 @@ const Hero: React.FC = () => {
 
   const closeMenu = useCallback(() => {
     setMenuOpen(false);
+  }, []);
+
+  useEffect(() => {
+    const t = setInterval(() => setBgIndex((i) => (i + 1) % 2), 5000);
+    return () => clearInterval(t);
   }, []);
 
   return (
@@ -25,8 +31,8 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          {/* logo */}
-          <div className="flex-1">
+          {/* logo (hidden on mobile) */}
+          <div className="flex-1 hidden lg:flex">
             <img src="/logo.png" alt="Fence Hero Logo" className="h-24 w-24" />
           </div>
 
@@ -165,6 +171,9 @@ const Hero: React.FC = () => {
           </button>
 
           {/* logo mobile */}
+          <div className="flex justify-center mb-10">
+            <img src="/logo.png" alt="Fence Hero Logo" className="h-24 w-24" />
+          </div>
 
           {/* mobile links */}
           <ul className="flex flex-col gap-6 text-center text-lg font-medium bg-black p-6 rounded-lg">
