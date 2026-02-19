@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Header from "./Header";
 import MobileMenu from "./MobileMenu";
 import SecondSection from "./SecondSection";
+import ThirdSection from "./ThirdSection";
 
 const Home: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +25,7 @@ const Home: React.FC = () => {
       <Hero />
 
       <SecondSection />
+      <ThirdSection />
     </main>
   );
 };

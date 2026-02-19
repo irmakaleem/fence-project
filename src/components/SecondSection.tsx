@@ -96,10 +96,10 @@ const SecondSection: React.FC = () => {
               </h2>
 
               <div className="mt-6 flex gap-4">
-                <button className="bg-[#D88E2A] text-white px-4 py-2 rounded-md  shadow-sm">
+                <button className="bg-[#D88E2A] text-white px-4 py-2 text-sm rounded-md  shadow-sm ">
                   View Our Work
                 </button>
-                <button className="border border-gray-900 text-gray-800 px-4 py-2 rounded-md font-medium">
+                <button className="border border-gray-900 text-gray-800 px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-900 hover:text-white transition">
                   Text Us for an Estimate
                 </button>
               </div>
@@ -107,75 +107,69 @@ const SecondSection: React.FC = () => {
 
             {/* Right 2x2 card grid */}
             <div className="pt-6 lg:pt-0">
-              <div className="flex flex-wrap gap-x-6 gap-y-4">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-3">
                 {/* Card 1 */}
-                <div
-                  className="rounded-[32px] border border-gray-700
-  w-1/2 sm:w-[200px] h-[340px] p-8 flex flex-col"
-                >
+                <div className="rounded-[32px] border border-gray-700 w-[200px]  min-h-[340px] p-6 flex flex-col ">
                   <img
                     src="/assets/SitePreparation.png"
                     alt="Site Preparation"
                     className="w-24 h-24 object-contain mb-8"
                   />
 
-                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight wrap-break-word">
                     Site Preparation
                   </h3>
 
-                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed wrap-break-word whitespace-normal">
                     We protect your grass and soil during every phase.
                   </p>
                 </div>
 
                 {/* Card 2 */}
-                <div
-                  className="rounded-[32px] border border-gray-700 
-  w-1/2 sm:w-[218px] h-[320px] p-8 flex flex-col"
-                >
+                <div className="rounded-[32px] border border-gray-700 w-1/2 sm:w-[218px]  h-[320px] p-6 flex flex-col">
                   <img
                     src="/assets/ConcreteReinforcement.png"
                     alt="Concrete Reinforcement"
                     className="w-24 h-24 object-contain mb-8"
                   />
 
-                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight wrap-break-word">
                     Concrete Reinforcement
                   </h3>
-                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed wrap-break-word whitespace-normal">
                     Stable, concrete-based foundations for every post.
                   </p>
                 </div>
 
                 {/* Card 3 */}
-                <div className="rounded-[32px] border border-gray-700 w-1/2 sm:w-[229px] h-[340px]  p-8 flex flex-col">
+                <div className="rounded-[32px] border border-gray-700 w-1/2 sm:w-[229px] h-[340px] p-6 flex flex-col">
                   <img
                     src="/assets/RestorationRepair.png"
                     alt="Restoration & Repair"
                     className="w-24 h-24 object-contain mb-8"
                   />
 
-                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight wrap-break-word">
                     Restoration & Repair
                   </h3>
-                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed wrap-break-word whitespace-normal">
                     Section replacement and gate adjustments to extend fence
                     life.
                   </p>
                 </div>
 
                 {/* Card 4 */}
-                <div className="rounded-[32px] border border-gray-700 w-1/2 sm:w-[200px] h-[320px] p-8 flex flex-col">
+                <div className="rounded-[32px] border border-gray-700 w-1/2 sm:w-[200px] h-[320px] p-6 flex flex-col">
                   <img
                     src="/assets/HaulAwayService.png"
                     alt="Haul-Away Service"
                     className="w-24 h-24 object-contain mb-8"
                   />
 
-                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight wrap-break-word">
                     Haul-Away Service
                   </h3>
-                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed wrap-break-word whitespace-normal">
                     We remove your old fence so you don't have to.
                   </p>
                 </div>
