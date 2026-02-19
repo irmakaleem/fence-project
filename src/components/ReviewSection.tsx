@@ -10,9 +10,9 @@ interface Review {
 const ReviewSection: React.FC = () => {
   const reviews: Review[] = [
     {
-      name: "John Smith",
-      title: "Homeowner",
-      text: "The best we ever received. It's a truly wonderful business that really puts care and thought into their work. We'll definitely use them again.",
+      name: "Isabella Turner",
+      title: "Project Manager",
+      text: "The best service I’ve received in a long time! The team was incredibly responsive, and their expertise was evident in the final product. There was a small miscommunication initially, but they quickly resolved it. I would definitely work with them again.",
       image: "/assets/user profile-x1.png",
     },
     {
@@ -98,19 +98,6 @@ const ReviewSection: React.FC = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/20" />
-
-            {/* Play button overlay (optional) */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-gray-100 transition">
-                <svg
-                  className="w-8 h-8 text-yellow-500 ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                </svg>
-              </div>
-            </div>
           </div>
 
           {/* Right Review Card */}
