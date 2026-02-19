@@ -52,7 +52,7 @@ const ThirdSection: React.FC = () => {
         </div>
 
         {/* CTA card with people image */}
-        <div className="bg-[#2b1711] py-20 px-6 lg:px-12">
+        <div className="bg-[#2b1711]  px-6 lg:px-12">
           <div className="max-w-6xl mx-auto">
             <div className="relative rounded-[40px] bg-gradient-to-r from-[#f3a73f] to-[#e67e3d] px-8 py-12 md:px-16 md:py-16 flex flex-col md:flex-row items-center justify-between overflow-hidden">
               {/* Left Content */}
@@ -75,11 +75,11 @@ const ThirdSection: React.FC = () => {
               </div>
 
               {/* Right Image */}
-              <div className="mt-10 md:mt-0 md:w-[60%] relative">
+              <div className="mb-44 md:mt-0 md:w-[60%] relative">
                 <img
                   src="/assets/readytostart.png"
                   alt="Ready to start"
-                  className="w-full h-auto object-contain"
+                  className="w-full  object-contain"
                 />
               </div>
             </div>
