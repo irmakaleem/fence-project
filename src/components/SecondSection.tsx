@@ -80,10 +80,10 @@ const SecondSection: React.FC = () => {
 
       <div className=" ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
             {/* Left text block */}
             <div className="pt-6 lg:pt-12">
-              <div className="inline-block bg-[#DFA249] text-white text-xs px-3 py-1 rounded-full font-medium">
+              <div className="inline-block bg-[#DFA249] text-black text-xs px-4 py-2 rounded-full font-medium">
                 Beyond Installation
               </div>
 
@@ -95,16 +95,11 @@ const SecondSection: React.FC = () => {
                 Perimeter.
               </h2>
 
-              <p className="mt-6 max-w-xl text-gray-700">
-                We provide end-to-end services that protect and prolong the life
-                of your fencing — from site prep to removal and restoration.
-              </p>
-
               <div className="mt-6 flex gap-4">
-                <button className="bg-[#D88E2A] text-white px-4 py-2 rounded-md font-medium shadow-sm">
+                <button className="bg-[#D88E2A] text-white px-4 py-2 rounded-md  shadow-sm">
                   View Our Work
                 </button>
-                <button className="border border-gray-300 text-gray-800 px-4 py-2 rounded-md font-medium bg-white">
+                <button className="border border-gray-900 text-gray-800 px-4 py-2 rounded-md font-medium">
                   Text Us for an Estimate
                 </button>
               </div>
@@ -112,95 +107,77 @@ const SecondSection: React.FC = () => {
 
             {/* Right 2x2 card grid */}
             <div className="pt-6 lg:pt-0">
-              <div className="grid grid-cols-2 gap-8">
+              <div className="flex flex-wrap gap-x-6 gap-y-4">
                 {/* Card 1 */}
                 <div
-                  className="rounded-[32px] border border-gray-400 
-  bg-[#F4F1E9] 
-  w-[300px] h-[380px] 
-  p-8 
-  flex flex-col"
+                  className="rounded-[32px] border border-gray-700
+  w-1/2 sm:w-[200px] h-[340px] p-8 flex flex-col"
                 >
                   <img
                     src="/assets/SitePreparation.png"
                     alt="Site Preparation"
-                    className="w-20 h-20 object-contain mb-8"
+                    className="w-24 h-24 object-contain mb-8"
                   />
 
-                  <h3 className="text-[20px] font-semibold text-gray-800 leading-tight">
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
                     Site Preparation
                   </h3>
 
-                  <p className="mt-4 text-[15px] text-gray-600 leading-relaxed">
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
                     We protect your grass and soil during every phase.
                   </p>
                 </div>
 
                 {/* Card 2 */}
-                <div className="rounded-2xl border border-gray-300 p-5 bg-white shadow-sm h-full flex flex-col">
-                  <div className="flex items-start gap-3">
-                    <img
-                      src="/assets/ConcreteReinforcement.png"
-                      alt="Concrete Reinforcement"
-                      onError={(e: any) =>
-                        (e.currentTarget.src = "/assets/card2.png")
-                      }
-                      className="w-14 h-14 object-contain"
-                    />
-                    <div>
-                      <h3 className="text-sm font-semibold text-gray-800">
-                        Concrete Reinforcement
-                      </h3>
-                      <p className="mt-2 text-xs text-gray-600">
-                        Stable, concrete-based foundations for every post.
-                      </p>
-                    </div>
-                  </div>
+                <div
+                  className="rounded-[32px] border border-gray-700 
+  w-1/2 sm:w-[218px] h-[320px] p-8 flex flex-col"
+                >
+                  <img
+                    src="/assets/ConcreteReinforcement.png"
+                    alt="Concrete Reinforcement"
+                    className="w-24 h-24 object-contain mb-8"
+                  />
+
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
+                    Concrete Reinforcement
+                  </h3>
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
+                    Stable, concrete-based foundations for every post.
+                  </p>
                 </div>
 
                 {/* Card 3 */}
-                <div className="rounded-2xl border border-gray-300 p-5 bg-white shadow-sm h-full flex flex-col">
-                  <div className="flex items-start gap-3">
-                    <img
-                      src="/assets/RestorationRepair.png"
-                      alt="Restoration & Repair"
-                      onError={(e: any) =>
-                        (e.currentTarget.src = "/assets/card3.png")
-                      }
-                      className="w-14 h-14 object-contain"
-                    />
-                    <div>
-                      <h3 className="text-sm font-semibold text-gray-800">
-                        Restoration & Repair
-                      </h3>
-                      <p className="mt-2 text-xs text-gray-600">
-                        Section replacement and gate adjustments to extend fence
-                        life.
-                      </p>
-                    </div>
-                  </div>
+                <div className="rounded-[32px] border border-gray-700 w-1/2 sm:w-[229px] h-[340px]  p-8 flex flex-col">
+                  <img
+                    src="/assets/RestorationRepair.png"
+                    alt="Restoration & Repair"
+                    className="w-24 h-24 object-contain mb-8"
+                  />
+
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
+                    Restoration & Repair
+                  </h3>
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
+                    Section replacement and gate adjustments to extend fence
+                    life.
+                  </p>
                 </div>
 
                 {/* Card 4 */}
-                <div className="rounded-2xl border border-gray-300 p-5 bg-white shadow-sm h-full flex flex-col">
-                  <div className="flex items-start gap-3">
-                    <img
-                      src="/assets/HaulAwayService.png"
-                      alt="Haul-Away Service"
-                      onError={(e: any) =>
-                        (e.currentTarget.src = "/assets/hero2.png")
-                      }
-                      className="w-14 h-14 object-contain"
-                    />
-                    <div>
-                      <h3 className="text-sm font-semibold text-gray-800">
-                        Haul-Away Service
-                      </h3>
-                      <p className="mt-2 text-xs text-gray-600">
-                        We remove your old fence so you don't have to.
-                      </p>
-                    </div>
-                  </div>
+                <div className="rounded-[32px] border border-gray-700 w-1/2 sm:w-[200px] h-[320px] p-8 flex flex-col">
+                  <img
+                    src="/assets/HaulAwayService.png"
+                    alt="Haul-Away Service"
+                    className="w-24 h-24 object-contain mb-8"
+                  />
+
+                  <h3 className="text-[21px] font-semibold text-gray-800 leading-tight">
+                    Haul-Away Service
+                  </h3>
+                  <p className="mt-4 text-[16px] text-gray-800 leading-relaxed">
+                    We remove your old fence so you don't have to.
+                  </p>
                 </div>
               </div>
             </div>
