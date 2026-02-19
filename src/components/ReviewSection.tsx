@@ -24,7 +24,7 @@ const ReviewSection: React.FC = () => {
     {
       name: "Michael Brown",
       title: "Property Owner",
-      text: "Outstanding service from start to finish. They completed the project ahead of schedule and the quality is exceptional. Highly recommend!",
+      text: "The marketing campaign they created for us was outstanding, and we saw significant engagement. However, I wish they had provided more frequent updates during the process. Overall, great work",
       image: "/assets/user profile-x1-3.png",
     },
   ];
