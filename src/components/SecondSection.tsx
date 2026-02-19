@@ -34,7 +34,7 @@ const SecondSection: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Cards Container */}
-        <div className="flex flex-col lg:flex-row gap-9 justify-center items-stretch absolute top-[136vh] left-1/2 transform -translate-x-1/2 w-full px-6 lg:px-12">
+        <div className="flex flex-col lg:flex-row gap-9 justify-center items-stretch relative top-[-90px] left-1/2 transform -translate-x-1/2 w-full px-6 lg:px-12">
           {(() => {
             const images = [
               "/assets/card1.png",
@@ -78,7 +78,7 @@ const SecondSection: React.FC = () => {
 
       {/* comprehensive care card section */}
 
-      <div className="absolute top-[180vh] left-0 right-0 mt-96">
+      <div className=" ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Left text block */}
