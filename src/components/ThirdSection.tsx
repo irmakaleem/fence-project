@@ -2,8 +2,13 @@ import React from "react";
 
 const ThirdSection: React.FC = () => {
   return (
-    <section className="bg-[#2b1711] text-white py-16 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto flex flex-col gap-10 justify-center">
+    <section className="relative bg-[#2b1711] text-white pt-8 pb-16 px-6 lg:px-12">
+      <img
+        className="absolute top-[-35px] inset-0 w-full z-[1]"
+        src="/assets/wood.png"
+        alt="brown wood"
+      />
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col gap-10 justify-center">
         {/* Top hero card */}
         {/* Top hero card */}
         <div className="relative mx-auto w-full max-w-[1375px] rounded-[20px] overflow-hidden shadow-lg">
