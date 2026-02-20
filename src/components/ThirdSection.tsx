@@ -6,19 +6,19 @@ const ThirdSection: React.FC = () => {
       <div className="max-w-7xl mx-auto flex flex-col gap-10 justify-center">
         {/* Top hero card */}
         {/* Top hero card */}
-        <div className="relative mx-auto w-full max-w-5xl rounded-[20px] overflow-hidden shadow-lg">
+        <div className="relative mx-auto w-full max-w-[1375px] rounded-[20px] overflow-hidden shadow-lg">
           <div
-            className="relative h-[260px] md:h-[360px] lg:h-[420px] bg-cover bg-center"
+            className="relative h-[260px] md:h-[609px] px-[27px] py-[33px]  bg-cover bg-center"
             style={{ backgroundImage: "url('/assets/builtforbusiness.png')" }}
           >
-            <div className="absolute inset-0 bg-black/45" />
+            <div className="absolute z-[1] inset-0 bg-gradient-to-b from-transparent to-black/70" />
 
-            <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 max-w-xl text-white">
-              <h3 className="text-[20px] md:text-2xl font-semibold">
+            <div className="relative flex flex-col h-full justify-end items-start z-10 w-full text-white/80">
+              <h3 className="text-[20px] md:text-[55px] font-semibold">
                 Built for Business. Built for Security
               </h3>
 
-              <p className="mt-3 text-sm md:text-base text-white/80">
+              <p className="mt-3 text-sm md:text-[30px] w-[900px] text-white/80">
                 Heavy-duty chain link and security-grade barriers serving the
                 Durham, North Carolina business community.
               </p>
@@ -27,25 +27,25 @@ const ThirdSection: React.FC = () => {
         </div>
 
         {/* Two feature cards */}
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 max-w-5xl mx-auto w-full  h-[32rem] md:h-auto">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 max-w-[1375px]   w-full  h-[32rem] md:h-auto">
           <div
-            className="relative rounded-[20px] shadow-lg flex-1 h-64 md:h-72 bg-cover bg-center"
+            className="relative rounded-[20px] w-[720px] shadow-lg flex-1 h-64 md:h-[550px] px-[27px] py-[33px] bg-cover bg-center"
             style={{ backgroundImage: "url('/assets/poolsafety.png')" }}
           >
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute z-[1] inset-0 rounded-[20px] bg-black/40" />
 
-            <h3 className="absolute bottom-6 left-6 text-white text-xl md:text-2xl font-semibold">
+            <h3 className="relative  flex flex-col h-full justify-end items-start z-10 w-full text-white/80 text-xl md:text-[55px] font-semibold">
               Pool Safety
             </h3>
           </div>
 
           <div
-            className="relative rounded-[20px]  shadow-lg flex-1 h-64 md:h-72 bg-cover bg-center"
+            className="relative rounded-[20px]  w-[720px] shadow-lg flex-1 h-64 md:h-[550px] px-[27px] py-[33px] bg-cover bg-center"
             style={{ backgroundImage: "url('/assets/petenclosures.png')" }}
           >
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute z-[1] inset-0 rounded-[20px] bg-black/40" />
 
-            <h3 className="absolute bottom-6 left-6 text-white text-xl md:text-2xl font-semibold">
+            <h3 className="relative  flex flex-col h-full justify-end items-start z-10 w-full text-white/80 text-xl md:text-[55px] font-semibold">
               Pet Enclosures
             </h3>
           </div>
@@ -60,7 +60,7 @@ const ThirdSection: React.FC = () => {
 
 const CTASection: React.FC = () => {
   return (
-    <div className=" mt-[140px] mb-[-240px] max-w-[1339px] relative z-[2] ">
+    <div className=" mt-[140px] mb-[-235px] max-w-[1339px] relative z-[2] ">
       <div className="relative  rounded-[40px] bg-gradient-to-r from-[#f3a73f] to-[#e67e3d] px-8  md:px-16  flex flex-col md:flex-row items-center justify-between min-h-[653px] ">
         {/* Left Content */}
         <div className="max-w-lg text-left text-black">
