@@ -2,7 +2,7 @@ import react from "react";
 
 const HeroHomeTwo: React.FC = () => {
   return (
-    <section className="bg-[#E7DFC9] pt-96">
+    <section className="bg-[#F8F1D9] pt-96">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
         {/* LEFT SIDE */}
         <div>

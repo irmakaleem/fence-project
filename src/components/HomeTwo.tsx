@@ -2,10 +2,11 @@ import React, { useCallback, useState } from "react";
 
 import Header from "./Header";
 import MobileMenu from "./MobileMenu";
-import ReviewSection from "./ReviewSection";
+
 import Footer from "./Footer";
 import HeroHomeTwo from "./HeroHomeTwo";
 import ReadyToStartHome2 from "./ReadyToStartHome2";
+import ReviewSectionHome2 from "./ReviewSectionHome2";
 
 const HomeTwo: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const HomeTwo: React.FC = () => {
       <MobileMenu menuOpen={menuOpen} closeMenu={closeMenu} />
       <HeroHomeTwo />
       <ReadyToStartHome2 />
-      {/* <ReviewSection /> */}
+      <ReviewSectionHome2 />
       <Footer />
     </main>
   );
