@@ -2,8 +2,8 @@ import react from "react";
 
 const HeroHomeTwo: React.FC = () => {
   return (
-    <section className="bg-[#F8F1D9] pt-96">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
+    <section className="bg-[#F8F1D9]  pt-80 relative overflow-visible ">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12 min-h-[1024px] overflow-visible">
         {/* LEFT SIDE */}
         <div>
           <span className="bg-[#D79327] text-black px-8 py-2 font-semibold rounded-full text-[16px]">
@@ -32,11 +32,11 @@ const HeroHomeTwo: React.FC = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="relative">
+        <div className="absolute z-10 bottom-0 right-0 w-[914px] h-[1024px] flex justify-end">
           <img
             src="/assets/heroHome2.svg"
             alt="Fence"
-            className="w-[1024px] h-full object-cover relative z-10"
+            className=" object-cover  w-full"
           />
         </div>
       </div>

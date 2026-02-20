@@ -7,6 +7,8 @@ import Footer from "./Footer";
 import HeroHomeTwo from "./HeroHomeTwo";
 import ReadyToStartHome2 from "./ReadyToStartHome2";
 import ReviewSectionHome2 from "./ReviewSectionHome2";
+import UltimatePrivacy from "./UltimatePrivacy";
+import ProfessionalRemoval from "./ProfessionalRemoval";
 
 const HomeTwo: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +26,10 @@ const HomeTwo: React.FC = () => {
 
       <MobileMenu menuOpen={menuOpen} closeMenu={closeMenu} />
       <HeroHomeTwo />
+      <UltimatePrivacy />
+      <ProfessionalRemoval />
       <ReadyToStartHome2 />
+
       <ReviewSectionHome2 />
       <Footer />
     </main>
