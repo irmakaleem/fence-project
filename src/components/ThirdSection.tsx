@@ -60,29 +60,29 @@ const ThirdSection: React.FC = () => {
 
 const CTASection: React.FC = () => {
   return (
-    <div className="bg-[#2b1711]  mt-[140px] max-w-[1339px] ">
-      <div className="relative rounded-[40px] bg-gradient-to-r from-[#f3a73f] to-[#e67e3d] px-8  md:px-16  flex flex-col md:flex-row items-center justify-between min-h-[653px] ">
+    <div className=" mt-[140px] mb-[-240px] max-w-[1339px] relative z-[2] ">
+      <div className="relative  rounded-[40px] bg-gradient-to-r from-[#f3a73f] to-[#e67e3d] px-8  md:px-16  flex flex-col md:flex-row items-center justify-between min-h-[653px] ">
         {/* Left Content */}
         <div className="max-w-lg text-left text-black">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-[70px] font-semibold leading-tight">
             Ready to <br />
             start your <br />
             project?
           </h2>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <button className="bg-black text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-800 transition">
+            <button className="bg-black text-white px-6 py-3 rounded-md text-[18px] font-semibold hover:bg-gray-800 transition bg-gradient-to-r from-[#3A2C1D] to-[#7B551F]">
               View Our Work
             </button>
 
-            <button className="border border-black px-6 py-3 rounded-md text-sm font-medium hover:bg-black hover:text-white transition">
+            <button className="border border-black px-6 py-3 rounded-md text-[18px] font-medium hover:bg-black hover:text-white transition">
               Text Us for an Estimate
             </button>
           </div>
         </div>
 
         {/* Right Image */}
-        <div className="mb-44 md:mt-0 absolute top-[-41%] right-0 h-[923px] w-[834px]">
+        <div className="absolute top-[-41%] right-0 h-[923px] w-[834px]">
           <img
             src="/assets/readytostart.png"
             alt="Ready to start"

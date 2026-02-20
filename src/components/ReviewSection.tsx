@@ -30,7 +30,15 @@ const ReviewSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#EFE4CE] py-16 px-6 lg:px-12">
+    <section
+      className=" relative bg-[#EFE4CE] py-96 px-6 lg:px-12 
+    "
+    >
+      <img
+        className="absolute top-[-108px] inset-0 w-full z-[1]"
+        src="/assets/whiteWood.png"
+        alt="white wood"
+      />
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
