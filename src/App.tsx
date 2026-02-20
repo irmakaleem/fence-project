@@ -1,12 +1,18 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home";
+import HomeTwo from "./components/HomeTwo";
+// create this
 
 const App: React.FC = () => {
   return (
-    <div className="bg-black text-white">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home-two" element={<HomeTwo />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

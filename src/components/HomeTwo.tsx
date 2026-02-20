@@ -1,13 +1,13 @@
 import React, { useCallback, useState } from "react";
-import Hero from "./Hero";
+
 import Header from "./Header";
 import MobileMenu from "./MobileMenu";
-import SecondSection from "./SecondSection";
-import ThirdSection from "./ThirdSection";
 import ReviewSection from "./ReviewSection";
 import Footer from "./Footer";
+import HeroHomeTwo from "./HeroHomeTwo";
+import ReadyToStartHome2 from "./ReadyToStartHome2";
 
-const Home2: React.FC = () => {
+const HomeTwo: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = useCallback(() => {
@@ -22,14 +22,12 @@ const Home2: React.FC = () => {
       <Header toggleMenu={toggleMenu} />
 
       <MobileMenu menuOpen={menuOpen} closeMenu={closeMenu} />
-
-      {/* Hero Section */}
-
-      <ThirdSection />
-      <ReviewSection />
+      <HeroHomeTwo />
+      <ReadyToStartHome2 />
+      {/* <ReviewSection /> */}
       <Footer />
     </main>
   );
 };
 
-export default Home2;
+export default HomeTwo;
