@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[140vh] overflow-hidden text-white font-[Inter] bg-cover bg-center bg-no-repeat">
+    <section className="relative min-h-[150vh] overflow-hidden text-white font-[Inter] bg-cover bg-center bg-no-repeat">
       {/* Stars background */}
       <div className="absolute inset-0 bg-[url('/assets/hero1.png')] bg-cover bg-no-repeat bg-center"></div>
 
