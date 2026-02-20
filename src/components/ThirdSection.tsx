@@ -3,7 +3,7 @@ import React from "react";
 const ThirdSection: React.FC = () => {
   return (
     <section className="bg-[#2b1711] text-white py-16 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto flex flex-col gap-10">
+      <div className="max-w-7xl mx-auto flex flex-col gap-10 justify-center">
         {/* Top hero card */}
         {/* Top hero card */}
         <div className="relative mx-auto w-full max-w-5xl rounded-[20px] overflow-hidden shadow-lg">
@@ -27,7 +27,7 @@ const ThirdSection: React.FC = () => {
         </div>
 
         {/* Two feature cards */}
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 max-w-5xl mx-auto w-full">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 max-w-5xl mx-auto w-full  h-[32rem] md:h-auto">
           <div
             className="relative rounded-[20px] shadow-lg flex-1 h-64 md:h-72 bg-cover bg-center"
             style={{ backgroundImage: "url('/assets/poolsafety.png')" }}
@@ -51,42 +51,46 @@ const ThirdSection: React.FC = () => {
           </div>
         </div>
 
-        {/* CTA card with people image */}
-        <div className="bg-[#2b1711]  px-6 lg:px-12">
-          <div className="max-w-6xl mx-auto">
-            <div className="relative rounded-[40px] bg-gradient-to-r from-[#f3a73f] to-[#e67e3d] px-8 py-12 md:px-16 md:py-16 flex flex-col md:flex-row items-center justify-between overflow-hidden">
-              {/* Left Content */}
-              <div className="max-w-lg text-left text-black">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                  Ready to <br />
-                  start your <br />
-                  project?
-                </h2>
-
-                <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                  <button className="bg-black text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-800 transition">
-                    View Our Work
-                  </button>
-
-                  <button className="border border-black px-6 py-3 rounded-md text-sm font-medium hover:bg-black hover:text-white transition">
-                    Text Us for an Estimate
-                  </button>
-                </div>
-              </div>
-
-              {/* Right Image */}
-              <div className="mb-44 md:mt-0 md:w-[60%] relative">
-                <img
-                  src="/assets/readytostart.png"
-                  alt="Ready to start"
-                  className="w-full  object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* CTA SECTION */}
+        <CTASection />
       </div>
     </section>
+  );
+};
+
+const CTASection: React.FC = () => {
+  return (
+    <div className="bg-[#2b1711]  mt-[140px] max-w-[1339px] ">
+      <div className="relative rounded-[40px] bg-gradient-to-r from-[#f3a73f] to-[#e67e3d] px-8  md:px-16  flex flex-col md:flex-row items-center justify-between min-h-[653px] ">
+        {/* Left Content */}
+        <div className="max-w-lg text-left text-black">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Ready to <br />
+            start your <br />
+            project?
+          </h2>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <button className="bg-black text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-800 transition">
+              View Our Work
+            </button>
+
+            <button className="border border-black px-6 py-3 rounded-md text-sm font-medium hover:bg-black hover:text-white transition">
+              Text Us for an Estimate
+            </button>
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="mb-44 md:mt-0 absolute top-[-41%] right-0 h-[923px] w-[834px]">
+          <img
+            src="/assets/readytostart.png"
+            alt="Ready to start"
+            className="w-full  object-contain"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

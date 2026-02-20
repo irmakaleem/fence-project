@@ -3,33 +3,18 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      className="relative text-white bg-black h-[70%] bg-cover bg-no-repeat bg-bottom "
+      className="relative min-h-[2000px] text-white bg-cover bg-no-repeat "
       style={{
-        backgroundImage: "url('/assets/footerTree.png')",
-        backgroundPosition: "center 50%",
+        backgroundImage: "url('/footerbg.svg')",
+        backgroundColor: "#EFE4CE",
       }}
     >
-      {/* WOOD STRIP */}
-      <div
-        className="w-full h-[90px] bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/wood.png')" }}
-      />
-
-      {/* LOGO OVERLAP */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-[20px] z-10">
-        <img
-          src="/assets/logo.png"
-          alt="Fence Logo"
-          className="w-[120px] md:w-[160px]"
-        />
-      </div>
-
       {/* MAIN CONTENT */}
-      <div className="max-w-7xl mx-auto px-6 pt-24 pb-24">
+      <div className="max-w-7xl mx-auto px-6 py-96">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT SIDE */}
           <div>
-            <span className="inline-block bg-[#f6b354] text-black text-xs px-4 py-2 rounded-full mb-6">
+            <span className="inline-block bg-[#f6b354] text-black text-xs px-6 py-4 rounded-full mb-6">
               Serving Raleigh, Clayton, Cary, and surrounding areas
             </span>
 
