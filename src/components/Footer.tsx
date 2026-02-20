@@ -10,7 +10,7 @@ const Footer = () => {
       }}
     >
       {/* MAIN CONTENT */}
-      <div className="max-w-7xl mx-auto px-6 py-96">
+      <div className="max-w-7xl mx-auto px-6 pt-96 pb-36">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT SIDE */}
           <div>
