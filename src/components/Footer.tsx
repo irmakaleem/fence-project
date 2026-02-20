@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      className="relative min-h-[2000px] text-white bg-cover bg-no-repeat "
+      className="relative min-h-[2000px] text-white bg-cover bg-no-repeat bg-[position:40%_center] "
       style={{
         backgroundImage: "url('/footerbg.svg')",
         backgroundColor: "#EFE4CE",
