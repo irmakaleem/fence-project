@@ -1,9 +1,12 @@
 import React from "react";
-import CTASectionMobile from "./CTASectionMobile";
 
 const ThirdSection: React.FC = () => {
+  const innerWIdth = window.innerWidth;
+  const mobileBreakpoint = 768; // Tailwind's md breakpoint
+  const isMobile = innerWIdth < mobileBreakpoint;
+
   return (
-    <section className="relative  text-white pt-8 pb-16 px-6 lg:px-12">
+    <section className="relative bg-[#2b1711] text-white pt-8 pb-16 px-6 lg:px-12">
       <img
         className="absolute top-[-35px] inset-0 w-full z-[1]"
         src="/assets/wood.png"
@@ -71,13 +74,7 @@ const ThirdSection: React.FC = () => {
           </div>
         </div>
         {/* CTA SECTION */}
-        <div className="hidden md:block">
-          <CTASection />
-        </div>
-
-        <div className="block md:hidden">
-          <CTASectionMobile />
-        </div>
+        {isMobile ? <CTASectionMobile /> : <CTASection />}
       </div>
     </section>
   );
@@ -112,6 +109,43 @@ const CTASection: React.FC = () => {
             src="/assets/readytostart.png"
             alt="Ready to start"
             className="w-full  object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const CTASectionMobile: React.FC = () => {
+  return (
+    <div
+      id="cta-mobile"
+      className=" mt-[140px] mb-[-235px] max-w-[1339px] relative z-[2] "
+    >
+      <div className="relative  rounded-[40px] bg-gradient-to-r from-[#f3a73f] to-[#e67e3d] flex flex-col pt-20 items-center justify-between   ">
+        {/* Left Content */}
+        <div className="max-w-lg px-8 text-center text-black">
+          <h2 className="text-[50px] font-semibold leading-tight">
+            Ready to start your project?
+          </h2>
+
+          <div className="mt-8 flex justify-between gap-2">
+            <button className="bg-black text-white px-4 py-3 rounded-md text-[10px] font-semibold hover:bg-gray-800 transition bg-gradient-to-r from-[#3A2C1D] to-[#7B551F]">
+              View Our Work
+            </button>
+
+            <button className="border border-black px-4 py-3 rounded-md text-[10px] font-medium hover:bg-black hover:text-white transition">
+              Text Us for an Estimate
+            </button>
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className=" h-[334px] w-[334px]">
+          <img
+            src="/assets/readytostart.png"
+            alt="Ready to start"
+            className="  absolute inset-0 bottom-0 w-full h-full object-contain"
           />
         </div>
       </div>

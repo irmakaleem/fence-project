@@ -18,11 +18,11 @@ const Header: React.FC<HeaderProps> = ({ toggleMenu }) => {
 
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-8">
         {/* logo (hidden on mobile) */}
-        <div className="flex-1 hidden lg:flex">
+        <div className="flex-1  lg:flex">
           <img
             src="/logo.png"
             alt="Fence Hero Logo"
-            className="  xl:h-[230px] xl:w-[250px] 2xl:h-[327px] 2xl:w-[350px] object-cover "
+            className="h-[100px]  xl:h-[230px] xl:w-[250px] 2xl:h-[327px] 2xl:w-[350px] object-cover "
           />
         </div>
 
