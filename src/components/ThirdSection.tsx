@@ -1,8 +1,9 @@
 import React from "react";
+import CTASectionMobile from "./CTASectionMobile";
 
 const ThirdSection: React.FC = () => {
   return (
-    <section className="relative bg-[#2b1711] text-white pt-8 pb-16 px-6 lg:px-12">
+    <section className="relative  text-white pt-8 pb-16 px-6 lg:px-12">
       <img
         className="absolute top-[-35px] inset-0 w-full z-[1]"
         src="/assets/wood.png"
@@ -70,7 +71,13 @@ const ThirdSection: React.FC = () => {
           </div>
         </div>
         {/* CTA SECTION */}
-        <CTASection />
+        <div className="hidden md:block">
+          <CTASection />
+        </div>
+
+        <div className="block md:hidden">
+          <CTASectionMobile />
+        </div>
       </div>
     </section>
   );

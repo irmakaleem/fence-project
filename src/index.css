@@ -2,6 +2,7 @@
 
 body,
 html {
+  background-color: #f8f1d9;
   overflow-x: hidden;
 }
 @media (min-width: 1024px) AND (max-width: 1300px) {
