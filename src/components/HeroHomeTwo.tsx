@@ -32,7 +32,7 @@ const HeroHomeTwo: React.FC = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="absolute z-10 top-[23%] xl:top-[20%] 2xl:top-[26%] right-0 w-[500px] h-[1050px] xl:w-[720px] xl:h-[914px] 2xl:w-[914px] 2xl:h-[1024px] flex justify-end">
+        <div className="absolute z-10 lg:top-[18%] xl:top-[20%] 2xl:top-[26%] right-0 w-[500px] h-[1050px] xl:w-[720px] xl:h-[914px] 2xl:w-[914px] 2xl:h-[1024px] flex justify-end">
           <img
             src="/assets/heroHome2.svg"
             alt="Fence"

@@ -59,10 +59,10 @@ const UltimatePrivacy = () => {
 
           {/* Right Text */}
           <div className="col-span-5">
-            <h3 className="text-[60px] xl:text-[50px] max-w-2 mt-20 leading-tight w-full font-semibold text-black/90">
+            <h3 className=" lg:text-[40px] xl:text-[50px] 2xl:text-[60px]  max-w-2 mt-20 leading-tight w-full font-semibold text-black/90">
               Contemporary Lines
             </h3>
-            <p className="mt-2 2xl:text-[23px] xl:text-[20px] text-black/90 max-w-md">
+            <p className="mt-2 lg:text-[18px] xl:text-[20px] 2xl:text-[23px]  text-black/90 max-w-md">
               Sleek, horizontal planks that provide a modern, high-end look for
               new-age residential architecture.
             </p>
