@@ -2,11 +2,11 @@ import react from "react";
 
 const HeroHomeTwo: React.FC = () => {
   return (
-    <section className="bg-[#F8F1D9]  pt-80 relative overflow-visible ">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12 min-h-[1024px] overflow-visible">
+    <section className="bg-[#F8F1D9] xl:pt-80  2xl:pt-[450px] relative overflow-visible xl:mb-[-360px] 2xl:mb-0 2xl:min-h-[1250px] ">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-12  overflow-visible pt-[100px]">
         {/* LEFT SIDE */}
-        <div>
-          <span className="bg-[#D79327] text-black px-8 py-2 font-semibold rounded-full text-[16px]">
+        <div className="xl:mb-[500px] 2xl:mb-0 ">
+          <span className=" bg-[#D79327] text-black px-8 py-2 font-semibold rounded-full text-[16px]">
             Natural Aesthetics & Privacy
           </span>
 
@@ -32,11 +32,11 @@ const HeroHomeTwo: React.FC = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="absolute z-10 bottom-0 right-0 w-[914px] h-[1024px] flex justify-end">
+        <div className="absolute z-10 top-[22%] 2xl:top-[32%] right-0  xl:w-[720px] xl:h-[914px] 2xl:w-[914px] 2xl:h-[1024px] flex justify-end">
           <img
             src="/assets/heroHome2.svg"
             alt="Fence"
-            className=" object-cover  w-full"
+            className="w-full h-full  "
           />
         </div>
       </div>

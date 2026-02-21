@@ -6,8 +6,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ toggleMenu }) => {
   return (
-    <nav className="absolute top-8 left-0 w-full z-30">
-      <div className="max-w-7xl mx-auto px-6 flex justify-end mb-4">
+    <nav className="absolute top-8 left-0 w-full z-30 ">
+      <div className="max-w-7xl mx-auto px-6 flex justify-end md:mb-[-25px] 2xl:mb-[-70px]">
         <a
           href="#"
           className="hidden lg:inline-block bg-yellow-600 text-white text-sm font-semibold px-6 py-2 rounded-md hover:bg-yellow-400 transition"
@@ -19,7 +19,11 @@ const Header: React.FC<HeaderProps> = ({ toggleMenu }) => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-8">
         {/* logo (hidden on mobile) */}
         <div className="flex-1 hidden lg:flex">
-          <img src="/logo.png" alt="Fence Hero Logo" className="h-48 w-50" />
+          <img
+            src="/logo.png"
+            alt="Fence Hero Logo"
+            className="  xl:h-[230px] xl:w-[250px] 2xl:h-[327px] 2xl:w-[350px] object-cover "
+          />
         </div>
 
         {/* desktop links */}

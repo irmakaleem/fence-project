@@ -2,10 +2,10 @@ import React from "react";
 
 const UltimatePrivacy = () => {
   return (
-    <section className=" mt-[-100px] w-full bg-[#F8F1D9] pb-24 relative">
+    <section className=" w-full bg-[#F8F1D9] pb-24 relative">
       {/* Top Wooden Background */}
       <div
-        className="w-full h-[420px] bg-cover bg-center relative"
+        className="w-full h-[420px]  bg-cover bg-center relative"
         style={{ backgroundImage: "url('/assets/wooden.png')" }}
       >
         <div className="max-w-[1200px] mx-auto px-6 pt-16 text-white/90">
