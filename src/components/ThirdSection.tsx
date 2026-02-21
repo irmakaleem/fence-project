@@ -2,8 +2,8 @@ import React from "react";
 
 const ThirdSection: React.FC = () => {
   const innerWIdth = window.innerWidth;
-  const mobileBreakpoint = 768; // Tailwind's md breakpoint
-  const isMobile = innerWIdth < mobileBreakpoint;
+  const tabletBreakpoint = 991; // tablet breakpoint
+  const isMobile = innerWIdth < tabletBreakpoint;
 
   return (
     <section className="relative bg-[#2b1711] text-white pt-8 pb-16 px-6 lg:px-12">
