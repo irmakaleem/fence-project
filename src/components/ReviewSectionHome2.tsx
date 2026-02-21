@@ -32,7 +32,7 @@ const ReviewSectionHome2: React.FC = () => {
 
   return (
     <section
-      className=" relative bg-[#F8F1D9] py-48 px-6 lg:px-12 
+      className=" relative bg-[#F8F1D9] py-24 xl:py-36 px-6 lg:px-12 
     "
     >
       <div className="max-w-7xl mx-auto">
@@ -58,7 +58,7 @@ const ReviewSectionHome2: React.FC = () => {
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-center">
           {/* Left Review Card */}
-          <div className="rounded-[20px] p-6 flex flex-col justify-between  min-h-[500px] border border-gray-500 shadow-md">
+          <div className="rounded-[20px] p-6 flex flex-col justify-between h-[620px] xl:min-h-[500px] border border-gray-500 shadow-md">
             {/* Stars */}
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
@@ -102,7 +102,7 @@ const ReviewSectionHome2: React.FC = () => {
           </div>
 
           {/* Center Featured Card */}
-          <div className="relative  min-h-[500px] border border-gray-500 rounded-[20px] overflow-hidden shadow-gray-800 md:col-span-1">
+          <div className="relative h-[620px] xl:min-h-[500px] border border-gray-500 rounded-[20px] overflow-hidden shadow-gray-800 md:col-span-1">
             <img
               src="/assets/shot-of-a-young-businessman-working-on-a-computer-in-an-office 1-x1-1.png"
               alt="Featured Professional"
@@ -151,7 +151,7 @@ const ReviewSectionHome2: React.FC = () => {
           </div>
 
           {/* Right Review Card */}
-          <div className=" rounded-[20px] border border-gray-500  p-6 flex flex-col justify-between min-h-[500px]  shadow-md">
+          <div className=" rounded-[20px] border border-gray-500  p-6 flex flex-col justify-between h-[620px] xl:min-h-[500px]  shadow-md">
             {/* Stars */}
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, i) => (

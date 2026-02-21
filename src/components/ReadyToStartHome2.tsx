@@ -2,7 +2,7 @@ import react from "react";
 
 const ReadyToStartHome2: React.FC = () => {
   return (
-    <div className="w-full bg-[#F8F1D9] py-24 px-4 md:px-10  ">
+    <div className="w-full bg-[#F8F1D9] py-10 xl:py-24 px-4 md:px-10  ">
       <div className=" max-w-[80%] xl:max-w-[78%] 2xl:max-w-[68%] mx-auto relative z-[2] ">
         <div className="relative  rounded-[40px] bg-gradient-to-r from-[#3A2C1D] to-[#7B551F] px-8  md:px-16  flex flex-col md:flex-row items-center justify-between min-h-[400px] xl:min-h-[553px]  2xl:min-h-[653px] ">
           {/* Left Content */}
