@@ -32,30 +32,43 @@ const ThirdSection: React.FC = () => {
         </div>
 
         {/* Two feature cards */}
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 max-w-[1375px]   w-full  h-[32rem] md:h-auto">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 max-w-[1375px] w-full h-auto md:h-auto">
           <div
-            className="relative rounded-[20px] w-[720px] shadow-lg flex-1 h-64 md:h-[550px] px-[27px] py-[33px] bg-cover bg-center"
+            className="
+      relative rounded-[20px] shadow-lg flex-1
+      w-full sm:w-full md:w-[48%] lg:w-[720px]
+      min-h-[250px] sm:min-h-[320px] md:h-[450px] lg:h-[550px]
+      px-5 sm:px-6 md:px-[27px]
+      py-6 sm:py-8 md:py-[33px]
+      bg-cover bg-center
+    "
             style={{ backgroundImage: "url('/assets/poolsafety.png')" }}
           >
             <div className="absolute z-[1] inset-0 rounded-[20px] bg-black/40" />
 
-            <h3 className="relative  flex flex-col h-full justify-end items-start z-10 w-full text-white/80 text-xl md:text-[55px] font-semibold">
+            <h3 className="relative flex flex-col h-full justify-end items-start z-10 w-full text-white/80 sm:text-xl md:text-4xl lg:text-[55px] font-semibold">
               Pool Safety
             </h3>
           </div>
 
           <div
-            className="relative rounded-[20px]  w-[720px] shadow-lg flex-1 h-64 md:h-[550px] px-[27px] py-[33px] bg-cover bg-center"
+            className="
+      relative rounded-[20px] shadow-lg flex-1
+      w-full sm:w-full md:w-[48%] lg:w-[720px]
+     min-h-[250px] sm:min-h-[320px] md:h-[450px] lg:h-[550px]
+      px-5 sm:px-6 md:px-[27px]
+      py-6 sm:py-8 md:py-[33px]
+      bg-cover bg-center
+    "
             style={{ backgroundImage: "url('/assets/petenclosures.png')" }}
           >
             <div className="absolute z-[1] inset-0 rounded-[20px] bg-black/40" />
 
-            <h3 className="relative  flex flex-col h-full justify-end items-start z-10 w-full text-white/80 text-xl md:text-[55px] font-semibold">
+            <h3 className="relative flex flex-col h-full justify-end items-start z-10 w-full text-white/80 sm:text-xl md:text-4xl lg:text-[55px] font-semibold">
               Pet Enclosures
             </h3>
           </div>
         </div>
-
         {/* CTA SECTION */}
         <CTASection />
       </div>
@@ -87,7 +100,7 @@ const CTASection: React.FC = () => {
         </div>
 
         {/* Right Image */}
-        <div className="absolute top-[-41%] right-0 h-[923px] w-[834px]">
+        <div className="absolute top-[-41%]  right-0 xl:h-[923px] xl:w-[834px]">
           <img
             src="/assets/readytostart.png"
             alt="Ready to start"
