@@ -14,21 +14,21 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT SIDE */}
           <div>
-            <span className="inline-flex items-center gap-2 bg-[#D79327] text-white text-[15px] font-semibold px-6 py-3 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 bg-[#D79327] text-white text-[12px] xl:text-[15px] font-semibold px-6 py-3 rounded-full mb-6">
               <img
                 src="/assets/location.svg"
                 alt="location icon"
-                className="w-8 h-8"
+                className=" w-6 h-6 xl:w-8 xl:h-8 2xl:w-8 2xl:h-8 "
               />
               Serving Raleigh, Clayton, Cary, and surrounding areas
             </span>
 
-            <h2 className="text-3xl md:text-[70px] font-semibold  leading-tight">
+            <h2 className="text-[50px] xl:text-[70px] font-semibold  leading-tight">
               Defining Your Space with{" "}
               <span className="text-[#D79327]">Premier Fencing Solutions.</span>
             </h2>
 
-            <p className="mt-4 text-gray-300 text-[20px] max-w-lg">
+            <p className="mt-4 text-gray-300 text-[16px] xl:text-[20px] max-w-lg">
               From residential privacy to heavy-duty commercial security, we
               combine five years of craftsmanship with top-tier materials to
               protect what matters most to you.
