@@ -2,15 +2,17 @@ import React from "react";
 
 const ProfessionalRemoval: React.FC = () => {
   return (
-    <section className="bg-[#F8F1D9] py-24 ">
+    <section className="bg-[#F8F1D9] pt-24 relative pb-36 2xl:pb-[420px]">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center gap-26">
         {/* LEFT SIDE */}
-        <div className="relative left-[-318px]">
-          <img
-            src="/assets/professionalremoversection.svg"
-            alt="Fence"
-            className="w-[900px] max-w-none  object-cover"
-          />
+        <div className="flex">
+          <div className="absolute top-0 w-[650px] 2xl:w-[900px] left-0 ">
+            <img
+              src="/assets/professionalremoversection.svg"
+              alt="Fence"
+              className=" w-full max-w-none  object-cover"
+            />
+          </div>
         </div>
 
         {/* RIGHT SIDE */}
