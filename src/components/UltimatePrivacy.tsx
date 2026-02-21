@@ -31,11 +31,11 @@ const UltimatePrivacy = () => {
     <section className=" w-full bg-[#F8F1D9] pb-24 relative">
       {/* Top Wooden Background */}
       <div
-        className="w-full h-[520px] flex justify-start items-start pt-24 bg-cover bg-center relative"
+        className="w-full lg:h-[420px] xl:h-[520px]  flex justify-start items-start pt-24 bg-cover bg-center relative"
         style={{ backgroundImage: "url('/assets/wooden.png')" }}
       >
-        <div className="xl:max-w-[72%] 2xl:max-w-[68%] mx-auto w-full text-white/90">
-          <h2 className="text-4xl md:text-[60px] font-semibold leading-tight">
+        <div className="max-w-[80%] xl:max-w-[72%] 2xl:max-w-[68%] mx-auto w-full text-white/90">
+          <h2 className="text-[40px] xl:text-[60px] font-semibold leading-tight">
             Ultimate <br /> Privacy
           </h2>
           <p className="mt-4 max-w-sm text-white/90 text-[18px]">
@@ -46,7 +46,7 @@ const UltimatePrivacy = () => {
       </div>
 
       {/* Middle Content */}
-      <div className=" xl:max-w-[86%] 2xl:max-w-[76%] w-full mx-auto px-6 relative -mt-20">
+      <div className="max-w-auto xl:max-w-[86%] 2xl:max-w-[76%] w-full mx-auto px-6 relative -mt-20">
         <div className="grid gap-12  grid-cols-12 items-center">
           {/* Image */}
           <div className="rounded-[105px] overflow-hidden shadow-lg h-[500px] 2xl:h-[700px]  col-span-7">
