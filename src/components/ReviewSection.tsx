@@ -86,7 +86,7 @@ const ReviewSection: React.FC = () => {
               />
             </div>
             {/* Review Text */}
-            <p className="text-gray-700 text-sm md:text-[20px] mb-6 flex-grow">
+            <p className="text-gray-700 text-[20px] md:text-[20px] mb-6 flex-grow">
               {reviews[0].text}
             </p>
 
@@ -179,7 +179,7 @@ const ReviewSection: React.FC = () => {
               />
             </div>
             {/* Review Text */}
-            <p className="text-gray-700 text-sm md:text-[20px] mb-6 flex-grow">
+            <p className="text-gray-700 text-[20px] md:text-[20px] mb-6 flex-grow">
               {reviews[2].text}
             </p>
 
